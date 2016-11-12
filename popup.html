@@ -1,48 +1,48 @@
 <!doctype html>
 <html>
-  <head>
-    <title>YouTrends</title>
-    <style>
-      body {
-        /*font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;*/
-        /*font-family: Impact, "Charcoal", sans-serif;*/
-        font-family:Helvetica;
-        font-size: 100%;
-        margin:0px !important;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-        height: 200px;
+<head>
+  <title>YouTrends</title>
+  <style>
+    body {
+      /*font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;*/
+      /*font-family: Impact, "Charcoal", sans-serif;*/
+      font-family: "Proxima Nova";
+      font-size: 100%;
+      margin:0px !important;
+    }
+    #status {
+      /* avoid an excessively wide status text */
+      white-space: pre;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 400px;
+      width:200px;
+      height: 200px;
 
-        background: linear-gradient(to bottom right, rgb(255, 102, 102), rgb(204, 0, 0));
-      }
+      background: linear-gradient(to bottom right, rgb(255, 102, 102), rgb(204, 0, 0));
+    }
 
-      .button {
-          background-color: rgb(255, 204, 204);
-          border-radius: 25px;
-          color: white;
-          /*padding: 15px 32px;*/
-          /*text-align: center;*/
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-      }
+    .button {
+      background-color: rgb(255, 204, 204);
+      border-radius: 25px;
+      color: white;
+      padding: 5px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
 
-    </style>
+  <script src="popup.js"></script>
+</head>
 
-    <script src="popup.js"></script>
-  </head>
-
-  <body>
-    <div id="status">
-      <h1 style="color: rgb(102, 0, 0)">YouTrends</h1>
-      <button id="linkMe" class="button">Link me fam!</button>
-    </div>
-  </body>
+<body>
+  <div id="status">
+    <center><h1 style="color: rgb(102, 0, 0)">YouTrends</h1></center>
+    <center><button id="linkMe" class="button">Link me fam!</button></center>
+  </div>
+</body>
 
 </html>
 
