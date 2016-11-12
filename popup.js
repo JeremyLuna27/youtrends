@@ -86,5 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
   //     renderStatus('Cannot display image. ' + errorMessage);
   //   });
   // });
-  renderStatus('Hello world');
+  //renderStatus('Hello world');
+  var linkMeButton = document.getElemenById('linkMe');
+  linkMeButton.addEventListener('click', function() {
+    console.log("height");
+    window.open('http://youtube.com/'); 
+  }
 });
