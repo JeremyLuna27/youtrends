@@ -6,75 +6,50 @@
     body {
       /*font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;*/
       /*font-family: Impact, "Charcoal", sans-serif;*/
-      font-family: "Proxima Nova";
+      font-family: Sans-Serif;
       font-size: 100%;
       margin:0px !important;
     }
     #status {
-      /* avoid an excessively wide status text */
-      white-space: pre;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      max-width: 400px;
-      width:200px;
-      height: 200px;
+     /*avoid an excessively wide status text */
+     white-space: pre;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     max-width: 400px;
+     max-height: 800px;
+     width:200px;
+     height: 300px;
 
-      background: linear-gradient(to bottom right, rgb(255, 102, 102), rgb(204, 0, 0));
-    }
+     background: linear-gradient(to bottom right, rgb(255, 102, 102), rgb(204, 0, 0));
+   }
 
-    .button {
-      background-color: rgb(255, 204, 204);
-      border-radius: 25px;
-      color: white;
-      padding: 5px 5px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
+   .button {
+    background-color: white;
+    border-radius: 25px;
+    color: red;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 120px;
+    height: 80px;
+  }
 
+</style>
 
-
-      
-    }
-
-    .logo {
-      /*margin: -150px 0;*/
-      /*height: 300px;*/
-      text-align: center;
-      font-size: 30px;
-      font-family: Impact, "Arial Black"; /* Not perfect, but :\ */
-      /*line-height: 300px;*/
-    }
-
-    #You {
-      text-shadow: .02em .02em 0.06em rgba(0,0,0,0.4);
-    }
-
-    #Tube{
-      /*padding: 0.05em .15em;*/
-      /*border: .05em solid #e23232;*/
-      box-shadow: .02em .02em 0.06em rgba(0,0,0,0.4);
-      border-radius: 17.5%;
-      background-color:#ffffff;
-      background-image: radial-gradient(100% -100%, circle cover, #ffffff, #ee3e3e 55%, #c72427 100%);
-      color: red;
-      text-stroke: 5px #c03036;
-    }
-  </style>
-
-  <script src="popup.js"></script>
+<script src="popup.js"></script>
 </head>
 
 <body>
   <div id="status">
-    <!-- <center><h1 style="color: rgb(102, 0, 0)">YouTrends</h1></center> -->
-    <div class="logo">
-      <span id="You">You</span>
-      <span id="Tube">Tube</span>
-    </div>
-
-    <center><button id="linkMe" class="button">Link me fam!</button></center>
+    <center><h1 style="color: white;">YouTrends</h1></center>
+    <center><button id="linkMe" class="button" style="font-weight: bold;">Link me!</button></center>
   </div>
+
+
 </body>
 
 </html>
