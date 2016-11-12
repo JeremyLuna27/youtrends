@@ -1,56 +1,24 @@
 <!doctype html>
 <html>
 <head>
+
   <title>YouTrends</title>
-  <style>
-    body {
-      /*font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;*/
-      /*font-family: Impact, "Charcoal", sans-serif;*/
-      font-family: Sans-Serif;
-      font-size: 100%;
-      margin:0px !important;
-    }
-    #status {
-     /*avoid an excessively wide status text */
-     white-space: pre;
-     text-overflow: ellipsis;
-     overflow: hidden;
-     max-width: 400px;
-     max-height: 800px;
-     width:200px;
-     height: 300px;
-
-     background: linear-gradient(to bottom right, rgb(255, 102, 102), rgb(204, 0, 0));
-   }
-
-   .button {
-    background-color: white;
-    border-radius: 25px;
-    color: red;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border: 2px solid white;
-    padding: 10px;
-    width: 120px;
-    height: 80px;
-  }
-
-</style>
-
-<script src="popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="popup.js"></script>
 </head>
 
 <body>
   <div id="status">
-    <center><h1 style="color: white;">YouTrends</h1></center>
+    <center><h1 style="color: white;" class="close-heading">YouTrends</h1></center>
     <center><button id="linkMe" class="button" style="font-weight: bold;">Link me!</button></center>
+  </div><div class="dropdown">
+  <button class="dropbtn" style="width:200px;font-weight: bold;">Categories</button>
+  <div class="dropdown-content">
+    <a href="#">Music</a>
+    <a href="#">Games</a>
+    <a href="#">Sports</a>
   </div>
-
-
+</div>
 </body>
-
 </html>
 
