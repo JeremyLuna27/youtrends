@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
   linkMeButton.addEventListener('click', function() {
     chrome.tabs.executeScript(null, { file: "jquery-3.1.1.js" }, function() {
         goToVideo();
-        //chrome.tabs.executeScript(null, { file: "content.js" });
     });
   });
 });
@@ -16,11 +15,8 @@ var categoryLinks = {
 
 function goToVideo() {
   var videoList;
-  console.log("hi");
-  //alert(config);
   $.getJSON(categoryLinks["food"], function(data) {
     videoList = data.query.results.a;
-    //console.log(videoList[10].href); // don't want &list=; only want watch?v=*
     randomNumber = Math.floor((Math.random()*videoList.length) + 1);
     link = videoList[randomNumber].href;
     if (link.includes("&")) {
