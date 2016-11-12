@@ -19,6 +19,6 @@
 
   "permissions": [
     "tabs",
-    "http://youtube.com/*"
+    "<all_urls>"
   ]
 }
