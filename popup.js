@@ -87,9 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
   //   });
   // });
   //renderStatus('Hello world');
+
+
   var linkMeButton = document.getElementById('linkMe');
+
   linkMeButton.addEventListener('click', function() {
-    console.log("height");
-    window.open('http://youtube.com/'); 
-  }
+    chrome.tabs.create({url: "http://youtube.com/" });
+  });
+  
 });
