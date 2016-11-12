@@ -3,7 +3,6 @@
   "name": "YouTrends",
   "version": "1.0",
 
-  "default_locale": "en",
   "description": "",
 
   "browser_action": {
@@ -13,5 +12,5 @@
   "permissions": [
     "tabs",
     "http://youtube.com/"
-  ],
+  ]
 }
