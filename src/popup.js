@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var linkMeButton = document.getElementById('linkMe');
 
   linkMeButton.addEventListener('click', function() {
-    chrome.tabs.executeScript(null, { file: "jquery-3.1.1.js" }, function() {
-        goToVideo("general");
-    });
+    goToVideo("general");
   });
 
   document.getElementById("categories").addEventListener("click", function(e) {
@@ -18,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function goToVideo(category) {
   var videoList;
   $.getJSON(categoryLinks[category], function(data) {
+    console.log("here");
     videoList = data.query.results.a;
     randomNumber = Math.floor((Math.random()*videoList.length) + 1);
     link = videoList[randomNumber].href;
@@ -25,6 +24,7 @@ function goToVideo(category) {
       link = link.split("&")[0];
     }
     goToUrl = "http://youtube.com" + link;
+    console.log(goToUrl);
     chrome.tabs.create({ url: goToUrl });
   });
 }
