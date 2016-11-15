@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "YouTrends",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "description": "Google Chrome extension for YouTube video discovery",
 
@@ -10,10 +10,11 @@
     "default_title": "YouTrends"
   },
 
-  "icons": { "16": "icons/icon16.png",
-           "48": "icons/icon48.png",
-          "128": "icons/icon128.png" 
-        },
+  "icons": { 
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png" 
+  },
 
   "permissions": [
     "tabs",
