@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "YouTrends",
-  "version": "1.0.2",
+  "version": "1.0.3",
 
   "description": "Google Chrome extension for YouTube video discovery",
 
@@ -17,15 +17,15 @@
   },
 
   "permissions": [
-    "tabs",
-    "http://www.youtube.com/*",
-    "https://www.youtube.com/*",
+    "http://youtube.com/*",
+    "https://youtube.com/*",
     "http://*.yahooapis.com/*",
     "https://*.yahooapis.com/*"
   ],
 
   "content_scripts": [
     {
+      "matches": ["http://youtube.com/*"],
       "css": ["src/style.css"],
       "js": ["src/jquery-3.1.1.js", "src/popup.js"]
     }
